@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="WhiteSmoke"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Sttopnews.View.StartupPage">
+
+    <Grid IgnoreSafeArea="True"
+          RowDefinitions=".80*, .20*">
+
+        <Frame BackgroundColor="WhiteSmoke"
+               x:Name="lk"
+               WidthRequest="250"
+               HeightRequest="250"
+               CornerRadius="150">
+            <Frame
+                BackgroundColor="WhiteSmoke"
+               WidthRequest="240"
+               HeightRequest="240"
+               CornerRadius="140">
+                <Frame
+                   BackgroundColor="WhiteSmoke"
+                   WidthRequest="230"
+                   HeightRequest="230"
+                   CornerRadius="130">
+                    <Frame
+                       BackgroundColor="WhiteSmoke"
+                       WidthRequest="225"
+                       HeightRequest="225"
+                       CornerRadius="120">
+                        <Image
+                            HeightRequest="100"
+                            x:Name="Logoimg"
+                            Source="logo.jpg"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+        </Frame>
+        
+        <VerticalStackLayout Grid.Row="1">
+            <Button
+                ImageSource="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                    Grid.Row="3"
+                    CornerRadius="5"
+                    BorderWidth="0"
+                    FontSize="14"
+                    TextColor="Black"
+                    Margin="32, 0, 32, 24"
+                    BorderColor="Gray"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Fill"
+                    BackgroundColor="#ffffff"
+                    Text="Começar a Viajar"/>
+            <Button Text="Entrar na minha Conta"
+                    ToolTipProperties.Text="Entrar em minha conta ou entrar como visitante"
+                    x:Name="Logar"
+                    CornerRadius="5"
+                    BorderWidth="0"
+                    FontSize="14"
+                    Clicked="Logar_Clicked"
+                    TextColor="White"
+                    Margin="32, 0, 32, 24"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Fill"
+                    BackgroundColor="#151515"/>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="by creating you accept "/>
+                        <Span Text=" Terms of use"
+                              TextDecorations="Underline"/>
+                        <Span Text=" and "/>
+                        <Span Text=" Privace Policy"
+                              TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

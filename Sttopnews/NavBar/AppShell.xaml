@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Sttopnews.NavBar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewLeitor="clr-namespace:Sttopnews.View.UsuarioLeitor"
+    Shell.FlyoutBehavior="Disabled">
+
+    <Shell.TitleView>
+        <FlexLayout Padding="10" 
+                    x:Name="header"
+                    Background="Transparent"
+                    JustifyContent="SpaceBetween"
+                    HeightRequest="80">
+            <Image Source="logo.jpg"
+                   Margin="10, 10, 10, 0"
+                   HeightRequest="60"/>
+            <HorizontalStackLayout>
+                <Shell.SearchHandler>
+                    <SearchHandler Placeholder="Pesquise"/>
+                </Shell.SearchHandler>
+                <ImageButton HeightRequest="40"
+                             Padding="12" 
+                             Source="dotnet_bot.png"
+                             BackgroundColor="WhiteSmoke"
+                             WidthRequest="40"
+                             CornerRadius="50"
+                             Margin="0, 0, 20, 0"/>
+            </HorizontalStackLayout>
+        </FlexLayout>
+    </Shell.TitleView> 
+    <TabBar>
+        <Tab Icon="home.svg"
+             Title="Inicio">
+            <ShellContent
+                ContentTemplate="{DataTemplate viewLeitor:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab Title="Salvos"
+             Icon="savedfalse.png">
+            <ShellContent
+               ContentTemplate="{DataTemplate viewLeitor:SavedPosts}"
+               Route="SavedPages"/>
+        </Tab>
+        <Tab Icon="user.svg"
+             Title="Perfil">
+            <ShellContent
+                ContentTemplate="{DataTemplate viewLeitor:Configuracoes}"
+                Route="Configuracoes" />
+        </Tab>
+    </TabBar>
+    
+
+</Shell>

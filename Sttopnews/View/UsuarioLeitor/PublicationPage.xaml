@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sttopnews.View.UsuarioLeitor.PublicationPage"
+             xmlns:options="clr-namespace:Sttopnews.View.UsuarioLeitor">
+    <Shell.TitleView>
+        <Grid
+            ColumnDefinitions="AUTO, *, AUTO">
+            <Button Grid.Column="0"
+                    CornerRadius="50"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="Gray"
+                    BorderColor="Gray"/>
+            
+            <Button Grid.Column="0"
+                    CornerRadius="50"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="Gray"
+                    BorderColor="Gray"/>
+        </Grid>
+    </Shell.TitleView>
+    <Grid
+        RowDefinitions="*, AUTO"
+        Padding="10">
+        <ScrollView>
+            <Grid
+                RowDefinitions="AUTO, AUTO, *">
+                <Grid>
+                    <Image 
+                           x:Name="img"
+                           HeightRequest="200"
+                           Aspect="AspectFill"/>
+                    <Frame BackgroundColor="White"
+                           Padding="3"
+                           TranslationX="100"
+                           TranslationY="-180">
+                        <Label x:Name="categoria"
+                               TextColor="Green"
+                               FontSize="14"/>
+                    </Frame>
+                </Grid>
+                <Label x:Name="titulo"
+                       Grid.Row="1"
+                       FontSize="24"
+                       LineBreakMode="WordWrap"
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
+                <Label x:Name="texto"
+                       Grid.Row="2"
+                       FontSize="14"
+                       LineBreakMode="WordWrap"
+                       TextColor="Grey"
+                       FontAttributes="Bold"/>
+            </Grid>
+        </ScrollView>
+        <options:PublicationOptions Grid.Row="1"
+                                    
+                                    HorizontalOptions="Center"/>
+    </Grid>
+</ContentPage>

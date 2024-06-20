@@ -1,0 +1,107 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Sttopnews
+build_property.ProjectDir = C:\Users\joeli\source\repos\Sttopnews\Sttopnews\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/NavBar/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.NavBar.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = NavBar\AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = NavBar\AppShell.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/NavBar/RedatorShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.NavBar.RedatorShell.xaml
+build_metadata.AdditionalFiles.TargetPath = NavBar\RedatorShell.xaml
+build_metadata.AdditionalFiles.RelativePath = NavBar\RedatorShell.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LoginPage.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/StartupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.StartupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\StartupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\StartupPage.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/Configuracoes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.Configuracoes.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\Configuracoes.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\Configuracoes.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\MainPage.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/PublicationOptions.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.PublicationOptions.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\PublicationOptions.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\PublicationOptions.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/PublicationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.PublicationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\PublicationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\PublicationPage.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/RadioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.RadioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\RadioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\RadioPage.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/SavedPosts.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.SavedPosts.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\SavedPosts.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\SavedPosts.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/SearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.SearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\SearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\SearchPage.xaml
+
+[C:/Users/joeli/source/repos/Sttopnews/Sttopnews/View/UsuarioLeitor/TvPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sttopnews.View.UsuarioLeitor.TvPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsuarioLeitor\TvPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsuarioLeitor\TvPage.xaml

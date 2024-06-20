@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarHasShadow="True"
+             xmlns:local="clr-namespace:Sttopnews.View.UsuarioLeitor"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"
+             x:Class="Sttopnews.View.UsuarioLeitor.MainPage">
+    <ContentPage.BindingContext>
+        <local:MainPage/>
+    </ContentPage.BindingContext>
+    <Shell.SearchHandler>
+        <SearchHandler Placeholder="Pesquisar"
+                       TextColor="LightGrey"/>
+    </Shell.SearchHandler>
+    <Grid IgnoreSafeArea="True"
+          RowDefinitions="AUTO,*,AUTO">
+        <Frame BorderColor="LightGray"
+               HasShadow="True"
+               Grid.Row="1"
+               CornerRadius="12"
+               HeightRequest="5"
+               WidthRequest="820">
+            <Frame.Background>
+                <!-- StartPoint defaults to (0,0) -->
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="Yellow"
+                          Offset="0.1" />
+                    <GradientStop Color="Blue"
+                                  Offset="0.5"/>
+                    <GradientStop Color="Green"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <ScrollView Grid.Row="2"
+                    Scrolled="OnScrollViewScrolled"
+                    VerticalScrollBarVisibility="Never">
+            <StackLayout 
+                Padding="20"
+                Margin="0, 10, 0,0">
+                <Button HeightRequest="100"/>
+                <Button HeightRequest="100"/>
+                <Button HeightRequest="100"/>
+                <Button HeightRequest="100"/>
+                <Button HeightRequest="100"/>
+                <Button HeightRequest="100"/>
+                <Button HeightRequest="100"/>
+                <CarouselView x:Name="carrossel"
+                              VerticalScrollBarVisibility="Never"
+                              IndicatorView="indicator">
+                    <CarouselView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"/>
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="15"
+                                   HeightRequest="200"
+                                   HasShadow="True">
+                                <VerticalStackLayout >
+                                    <Image HeightRequest="200"
+                                            Source="{Binding Img}">
+                                        <Image.Clip>
+                                            <RoundRectangleGeometry CornerRadius="15,15,15,15"/>
+                                        </Image.Clip>
+                                    </Image>
+                                    <Grid RowDefinitions="*,*"
+                                            TranslationY="-200">
+                                        <StackLayout Grid.Row="1">
+                                            <Frame BackgroundColor="{AppThemeBinding Light=White, Dark=gray}"
+                                                    HeightRequest="20"
+                                                    Padding="5"
+                                                    CornerRadius="20">
+                                                <Label Text="{Binding Categoria}"
+                                                        TextColor="Green"/>
+                                            </Frame>
+                                            <Label Text="{Binding Titulo}"
+                                                    FontSize="24"
+                                                    TextColor="{AppThemeBinding Light=White, Dark=gray}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="indicator"
+                               MaximumVisible="12"
+                               Margin="5"
+                               SelectedIndicatorColor="Green"
+                               IndicatorColor="Gray">
+                    <IndicatorView.IndicatorTemplate>
+                        <DataTemplate>
+                            <Frame HeightRequest="3"
+                                   WidthRequest="10"/>
+                        </DataTemplate>
+                    </IndicatorView.IndicatorTemplate>
+                </IndicatorView>
+                <tabView:SfTabView x:Name="tabview">
+                    <tabView:SfTabView.HeaderItemTemplate>
+                        <DataTemplate>
+                            <Frame BackgroundColor="Green"
+                                   Margin="5, 10, 5, 10">
+                                <Label Text="{Binding Categoria}"
+                                       FontSize="16"
+                                       TextColor="Grey"/>
+                            </Frame>
+                        </DataTemplate>
+                    </tabView:SfTabView.HeaderItemTemplate>
+                    <tabView:SfTabView.ContentItemTemplate>
+                        <DataTemplate>
+                            <CollectionView ItemsSource="{Binding Lista}"
+                                            VerticalScrollBarVisibility="Never"
+                                            Margin="20">
+                                <CollectionView.ItemsLayout>
+                                    <LinearItemsLayout Orientation="Vertical"/>
+                                </CollectionView.ItemsLayout>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="2*"/>
+                                                <ColumnDefinition Width="AUTO"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Grid.Column="0"
+                                                   Margin="5"
+                                                   Source="{Binding Imagem}">
+                                                <Image.Clip>
+                                                    <RoundRectangleGeometry CornerRadius="20, 20, 20, 20"/>
+                                                </Image.Clip>
+                                            </Image>
+                                            <Grid Grid.Column="1"
+                                                  RowDefinitions="*, AUTO">
+                                                <Label Text="{Binding Titulo}"
+                                                       Grid.Row="1"
+                                                       FontSize="24"
+                                                       LineBreakMode="WordWrap"
+                                                       TextColor="Black"
+                                                       FontAttributes="Bold"/>
+                                                <Label FontSize="16"
+                                                       Grid.Column="1"
+                                                       TextColor="Gray">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="{Binding Data}"/>
+                                                            <Span Text=" o "/>
+                                                            <Span Text="{Binding Categoria}"/>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                            </Grid>
+                                            <ImageButton Source="bookmark.png"
+                                                         ToolTipProperties.Text="Visualizar Offline"
+                                                         VerticalOptions="Center"/>
+
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </DataTemplate>
+                    </tabView:SfTabView.ContentItemTemplate>
+                </tabView:SfTabView>
+            </StackLayout>
+        </ScrollView>
+        <Label TextColor="Grey"
+               Grid.Row="3">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="STTOPNEWS"
+                          FontSize="16"/>
+                    <Span Text="Proibida a vinculação indevida desta matéria"
+                          FontSize="13"/>
+                </FormattedString>
+            </Label.FormattedText> 
+        </Label>
+    </Grid>
+</ContentPage>
